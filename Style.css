@@ -55,6 +55,7 @@ h1{
     right: 0px;
     height: 350px;
     width: 1650px;
+    max-width: 100%;
 }
 .traffic_light{
     position:absolute;
