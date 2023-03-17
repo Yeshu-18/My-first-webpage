@@ -12,7 +12,7 @@ h1{
 }
 #ToRed{
     position: absolute;
-    opacity: 1;
+    opacity: 0;
     border-radius: 50%;
     width: 35px;
     height: 35px;
@@ -33,7 +33,7 @@ h1{
 }
 #ToGreen{
     position: absolute;
-    opacity: 1;
+    opacity: 0;
     border-radius: 50%;
     width: 35px;
     height: 35px;
