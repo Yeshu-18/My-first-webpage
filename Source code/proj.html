@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="'Yeshwanth Raghavendar" />
+        <title>My first webpage using HTML and CSS</title>
+        <link rel="stylesheet" href="Style.css">
+
+    </head>
+
+    <body>
+        <h1> Click on the signal lights! </h1>
+        <button id="ToRed"> Change color </button>
+        <button id="ToYellow"> Change color </button>
+        <button id="ToGreen"> Change color </button>
+        <img class="alert" src="alert.png" alt  = "Alert" onclick="blinkPage()">
+        <img class="road" src="road.png" >
+        <img class="traffic_light" src="traffic_light.png" >
+
+
+        
+        <script>
+        function blinkPage() {
+            const body = document.getElementsByTagName("body")[0];
+            var isWhite = false;
+            var intervalId = setInterval(function() {
+            if (isWhite) {
+                body.style.background = "red";
+                isWhite = false;
+            } else {
+                body.style.background = "white";
+                isWhite = true;
+            }
+            }, 100);
+            setTimeout(function() {
+            clearInterval(intervalId);
+            body.style.background = "linear-gradient(90deg,black,rgb(42, 40, 40),rgb(97, 87, 87))";
+            }, 2000);
+        }
+        </script>
+
+        
+        <script>
+            const red = document.getElementById('ToRed');
+            const yellow = document.getElementById('ToYellow');
+            const green = document.getElementById('ToGreen');
+            
+            red.addEventListener('click',function() {
+                document.body.style.background = "linear-gradient(90deg,rgb(210, 16, 16),rgb(187, 22, 22),rgb(171, 21, 21))";
+            });
+            yellow.addEventListener('click',function() {
+                document.body.style.background = "linear-gradient(90deg,rgb(227, 227, 3),rgba(227, 227, 3, 0.941),rgba(223, 223, 8, 0.799))";
+            });
+            green.addEventListener('click',function() {
+                document.body.style.background = "linear-gradient(90deg,rgba(29, 155, 0, 0.958),rgba(15, 143, 4, 0.952),rgba(18, 141, 6, 0.826))";
+            });
+        </script>
+
+
+    </body>
+</html>
