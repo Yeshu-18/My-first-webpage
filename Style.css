@@ -52,6 +52,7 @@ h1{
     position: absolute;
     bottom: 0px;
     left: 0px;
+    right: 0px;
     height: 350px;
     width: 1650px;
 }
