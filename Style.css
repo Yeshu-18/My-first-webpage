@@ -17,17 +17,18 @@ h1{
     width: 35px;
     height: 35px;
     left: 564px;
-    top: 194px;
+    bottom: 470px;
     z-index: 1;
 }
+
 #ToYellow{
     position: absolute;
-    opacity: 1;
+    opacity: 0;
     border-radius: 50%;
     width: 35px;
     height: 35px;
     left: 564px;
-    top: 229px;
+    bottom: 435px;
     z-index: 1;
 }
 #ToGreen{
@@ -37,7 +38,7 @@ h1{
     width: 35px;
     height: 35px;
     left: 564px;
-    top: 264px;
+    bottom: 400px;
     z-index: 1;
 }
 .alert{
